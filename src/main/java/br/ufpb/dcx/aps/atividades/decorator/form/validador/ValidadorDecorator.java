@@ -1,8 +1,6 @@
 package br.ufpb.dcx.aps.atividades.decorator.form.validador;
-
-
 import br.ufpb.dcx.aps.atividades.decorator.form.Resultado;
-import br.ufpb.dcx.aps.atividades.decorator.form.ValidadorCampo;
+import br.ufpb.dcx.aps.atividades.decorator.form.validador.ValidadorCampo;
 
 public class ValidadorDecorator implements ValidadorCampo {
 
@@ -11,6 +9,7 @@ public class ValidadorDecorator implements ValidadorCampo {
     public ValidadorDecorator(){}
 
     public ValidadorDecorator(ValidadorCampo decorated){
+
         this.decorated = decorated;
     }
 
@@ -21,6 +20,7 @@ public class ValidadorDecorator implements ValidadorCampo {
     }
 
     public void setDecorated(ValidadorCampo decorated){
+
         this.decorated = decorated;
     }
 }

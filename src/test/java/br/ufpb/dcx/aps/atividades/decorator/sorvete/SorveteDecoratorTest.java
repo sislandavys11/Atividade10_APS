@@ -41,7 +41,7 @@ class SorveteDecoratorTest {
         double precoResult = bananaSplit.getPreco();
 
         //Verifiquem se o assert a seguir vai dar erro. Se sim, arredondem o double.
-        assertEquals(1.40,precoResult);
+        assertEquals(1.40,precoResult,0.0001);
         assertEquals("calda(baunilha), chocolate, morango, banana, ",bananaSplit.getSabor());
     }
 }
